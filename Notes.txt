@@ -1,0 +1,16 @@
+GIT- Distributed Version Control System while others like SVN are Central VCS
+Distributed VCS- Everybody has a local repository synced to the last check out time
+
+Config commands-
+git config --global user.name "Soumadiptya"
+git config --global user.email "soumadiptya@gmail.com"
+git config --list- Lists all user variables
+
+Get Help
+git help config
+git config --help
+
+Common use cases-
+1) Track an existing project using git-
+Initialize a repository from existing code
+https://github.com/soumadiptya/Git-Tutorials.git
