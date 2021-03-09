@@ -11,6 +11,31 @@ git help config
 git config --help
 
 Common use cases-
-1) Track an existing project using git-
-Initialize a repository from existing code
-https://github.com/soumadiptya/Git-Tutorials.git
+1) Track an existing project using git- This is not at all recommended due to how many fucking problems seem to arise on trying to push code to a remote repository. Just clone a repo and proceed instead.
+Initialize a repository from existing code-
+git init
+Before first commit-
+git status
+Add a gitignore-
+touch .gitignore
+
+Files in GIT can be in following stages
+1) In your working directory- Untracked and Modified files
+2) In a Staging Area- Organize what we want to be commited. Done by using git add and git commit
+3) Push to remote- git push
+Remove files from staging area-
+git reset [filename]- If you use reset without any names it removes all files from the staging area.
+Get log of all commits-
+git log
+
+To do a Git push now a days requires a SSH key. Here are steps to use it:
+1) Generate SSH key ssh-keygen -t ed25519 -C "your_email@example.com"
+2) Add it to your GitHub profile from the Settings
+3) Add key to your ssh-agent
+eval `ssh-agent -s`
+ssh-add ./filename_of_your_key_file
+This needs to be done each session. Surely there is a better way? 
+
+View information about Remote repository-
+git remote -v
+git branch -a
