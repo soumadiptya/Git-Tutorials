@@ -28,7 +28,6 @@ def extract_freq_unit(time_string):
         freq_unit = 'weeks'
     elif freq_unit in ['per']:
         freq_unit = 'per iow'
-    return freq_unit
 
 def get_freq(time_string):
     pattern_to_sub = "[a-z]"
